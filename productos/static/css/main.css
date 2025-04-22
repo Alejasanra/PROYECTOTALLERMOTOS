@@ -1,0 +1,125 @@
+
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+.table thead th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Botones */
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn-group .btn {
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+/* Forms */
+.form-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #e9ecef;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .btn-sm {
+        padding: 0.25rem 0.4rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Animaciones */
+.btn, .card {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Badge personalizado */
+.badge {
+    padding: 0.5em 0.8em;
+    font-weight: 500;
+}
+
+/* Sombras */
+.shadow {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Estilo para inputs de precio */
+.input-group-text {
+    background-color: #0d6efd;
+    color: white;
+    border: 1px solid #0d6efd;
+}
+
+.card-header.bg-primary {
+    background-color: red !important; 
+    color: white; 
+    font-weight: 600;
+}
+
+
+.btn-primary {
+    background-color: red !important;
+    color: white; 
+    border-color: red !important; 
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: darkred !important; 
+    border-color: darkred !important;
+}
+
+
+
+.navbar.bg-primary {
+    background-color: rgb(9, 9, 9) !important; 
+}
+

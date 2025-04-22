@@ -1,0 +1,31 @@
+{% extends 'productos/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card shadow">
+            <div class="card-header bg-danger text-white">
+                <h4 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i>Eliminar Producto</h4>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-warning">
+                    <p>¿Estás seguro de que deseas eliminar el producto <strong>"{{ producto.nombre }}"</strong> con código <strong>{{ producto.codigo }}</strong>?</p>
+                    <p class="mb-0"><small>Esta acción no se puede deshacer.</small></p>
+                </div>
+                
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d-flex justify-content-between mt-4">
+                        <a href="{% url 'producto-list' %}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-1"></i>Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash me-1"></i>Eliminar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
